@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{939B7B8B-14DC-4F0F-B334-B8CE3A193DD0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FaceTrek</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OpenCV\opencv\build\include\opencv2;C:\OpenCV\opencv\build\include\opencv;C:\OpenCV\opencv\build\include;C:\git\Dlib\dlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib_build\Release\dlib.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_videostab300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_videoio300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_video300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_superres300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_stitching300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_shape300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_photo300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_objdetect300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_ml300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_imgproc300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_imgcodecs300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_highgui300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_hal300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_flann300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_features2d300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_core300.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\opencv_calib3d300.lib;winmm.lib;imm32.lib;vfw32.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\libjpeg.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\libwebp.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\libpng.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\libtiff.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\libjasper.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\IlmImf.lib;comctl32.lib;setupapi.lib;ws2_32.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\zlib.lib;C:\OpenCV\opencv\build\x64\vc12\staticlib\ippicvmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\git\opencv-build\install\include\opencv2;C:\git\opencv-build\install\include\opencv;C:\git\opencv-build\install\include;C:\git\Dlib\dlib</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib.lib;opencv_videostab310.lib;opencv_videoio310.lib;opencv_video310.lib;opencv_superres310.lib;opencv_stitching310.lib;opencv_shape310.lib;opencv_photo310.lib;opencv_objdetect310.lib;opencv_ml310.lib;opencv_imgproc310.lib;opencv_imgcodecs310.lib;opencv_highgui310.lib;opencv_flann310.lib;opencv_features2d310.lib;opencv_core310.lib;opencv_calib3d310.lib;opencv_viz310.lib;winmm.lib;imm32.lib;vfw32.lib;libjpeg.lib;libwebp.lib;libpng.lib;libtiff.lib;libjasper.lib;IlmImf.lib;comctl32.lib;setupapi.lib;ws2_32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\git\opencv-build\3rdparty\lib\Release;dlib_build\Release\;C:\git\opencv-build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\git\opencv-build\install\include\opencv2;C:\git\opencv-build\install\include\opencv;C:\git\opencv-build\install\include;C:\git\Dlib\dlib</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib.lib;opencv_videostab310.lib;opencv_videoio310.lib;opencv_video310.lib;opencv_superres310.lib;opencv_stitching310.lib;opencv_shape310.lib;opencv_photo310.lib;opencv_objdetect310.lib;opencv_ml310.lib;opencv_imgproc310.lib;opencv_imgcodecs310.lib;opencv_highgui310.lib;opencv_flann310.lib;opencv_features2d310.lib;opencv_core310.lib;opencv_calib3d310.lib;opencv_viz310.lib;winmm.lib;imm32.lib;vfw32.lib;ippicvmt.lib;libjpeg.lib;libwebp.lib;libpng.lib;libtiff.lib;libjasper.lib;IlmImf.lib;comctl32.lib;setupapi.lib;ws2_32.lib;zlib.lib;vtkalglib-7.1.lib;vtkChartsCore-7.1.lib;vtkCommonColor-7.1.lib;vtkCommonComputationalGeometry-7.1.lib;vtkCommonCore-7.1.lib;vtkCommonDataModel-7.1.lib;vtkCommonExecutionModel-7.1.lib;vtkCommonMath-7.1.lib;vtkCommonMisc-7.1.lib;vtkCommonSystem-7.1.lib;vtkCommonTransforms-7.1.lib;vtkDICOMParser-7.1.lib;vtkDomainsChemistry-7.1.lib;vtkexoIIc-7.1.lib;vtkexpat-7.1.lib;vtkFiltersAMR-7.1.lib;vtkFiltersCore-7.1.lib;vtkFiltersExtraction-7.1.lib;vtkFiltersFlowPaths-7.1.lib;vtkFiltersGeneral-7.1.lib;vtkFiltersGeneric-7.1.lib;vtkFiltersGeometry-7.1.lib;vtkFiltersHybrid-7.1.lib;vtkFiltersHyperTree-7.1.lib;vtkFiltersImaging-7.1.lib;vtkFiltersModeling-7.1.lib;vtkFiltersParallel-7.1.lib;vtkFiltersParallelGeometry-7.1.lib;vtkFiltersParallelImaging-7.1.lib;vtkFiltersParallelMPI-7.1.lib;vtkFiltersPoints-7.1.lib;vtkFiltersProgrammable-7.1.lib;vtkFiltersSelection-7.1.lib;vtkFiltersSMP-7.1.lib;vtkFiltersSources-7.1.lib;vtkFiltersStatistics-7.1.lib;vtkFiltersTexture-7.1.lib;vtkFiltersVerdict-7.1.lib;vtkfreetype-7.1.lib;vtkGeovisCore-7.1.lib;vtkgl2ps-7.1.lib;vtkhdf5-7.1.lib;vtkhdf5_hl-7.1.lib;vtkImagingColor-7.1.lib;vtkImagingCore-7.1.lib;vtkImagingFourier-7.1.lib;vtkImagingGeneral-7.1.lib;vtkImagingHybrid-7.1.lib;vtkImagingMath-7.1.lib;vtkImagingMorphological-7.1.lib;vtkImagingSources-7.1.lib;vtkImagingStatistics-7.1.lib;vtkImagingStencil-7.1.lib;vtkInfovisCore-7.1.lib;vtkInfovisLayout-7.1.lib;vtkInteractionImage-7.1.lib;vtkInteractionStyle-7.1.lib;vtkInteractionWidgets-7.1.lib;vtkIOAMR-7.1.lib;vtkIOCore-7.1.lib;vtkIOEnSight-7.1.lib;vtkIOExodus-7.1.lib;vtkIOExport-7.1.lib;vtkIOGeometry-7.1.lib;vtkIOImage-7.1.lib;vtkIOImport-7.1.lib;vtkIOInfovis-7.1.lib;vtkIOLegacy-7.1.lib;vtkIOLSDyna-7.1.lib;vtkIOMINC-7.1.lib;vtkIOMovie-7.1.lib;vtkIOMPIImage-7.1.lib;vtkIOMPIParallel-7.1.lib;vtkIONetCDF-7.1.lib;vtkIOParallel-7.1.lib;vtkIOParallelNetCDF-7.1.lib;vtkIOParallelXML-7.1.lib;vtkIOPLY-7.1.lib;vtkIOSQL-7.1.lib;vtkIOTecplotTable-7.1.lib;vtkIOVideo-7.1.lib;vtkIOXML-7.1.lib;vtkIOXMLParser-7.1.lib;vtkjpeg-7.1.lib;vtkjsoncpp-7.1.lib;vtklibxml2-7.1.lib;vtkmetaio-7.1.lib;vtkNetCDF-7.1.lib;vtkNetCDF_cxx-7.1.lib;vtkoggtheora-7.1.lib;vtkParallelCore-7.1.lib;vtkParallelMPI-7.1.lib;vtkpng-7.1.lib;vtkproj4-7.1.lib;vtkRenderingAnnotation-7.1.lib;vtkRenderingContext2D-7.1.lib;vtkRenderingContextOpenGL-7.1.lib;vtkRenderingCore-7.1.lib;vtkRenderingFreeType-7.1.lib;vtkRenderingGL2PS-7.1.lib;vtkRenderingImage-7.1.lib;vtkRenderingLabel-7.1.lib;vtkRenderingLIC-7.1.lib;vtkRenderingLOD-7.1.lib;vtkRenderingOpenGL-7.1.lib;vtkRenderingVolume-7.1.lib;vtkRenderingVolumeOpenGL-7.1.lib;vtksqlite-7.1.lib;vtksys-7.1.lib;vtktiff-7.1.lib;vtkverdict-7.1.lib;vtkViewsContext2D-7.1.lib;vtkViewsCore-7.1.lib;vtkViewsGeovis-7.1.lib;vtkViewsInfovis-7.1.lib;vtkzlib-7.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\git\VTK-7.1.0-Install\lib;C:\git\opencv-build\install\x64\vc12\staticlib;dlib_build\Release\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

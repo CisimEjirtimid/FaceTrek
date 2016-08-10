@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/git/Dlib/dlib/dlib/CMakeLists.txt
+C:/git/Dlib/dlib/dlib/cmake_utils/release_build_by_default
+C:/git/Dlib/dlib/dlib/cmake_utils/use_cpp_11.cmake
+C:/git/Dlib/dlib/dlib/cmake_utils/add_global_compiler_switch.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CheckFunctionExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPNG.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindZLIB.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindJPEG.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
