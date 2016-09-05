@@ -324,6 +324,7 @@ int main()
         std::vector<Point2f> points, previous_points, corners, previous_corners;
 
         image_window win;
+        win.set_title("Face Alignment");
 
         // Grab and process frames until the main window is closed by the user.
         while (running)
@@ -428,8 +429,8 @@ int main()
                     cv::swap(previous_gray, gray);
                 }
 
-                namedWindow("Optical Flow Points");
-                cv::imshow("Optical Flow Points", frame);
+                namedWindow("Optical Flow");
+                cv::imshow("Optical Flow", frame);
             }
 
             char c = (char)waitKey(60);

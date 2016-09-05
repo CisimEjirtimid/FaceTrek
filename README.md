@@ -2,11 +2,13 @@ FaceTrek Project for the Soft Computing Course and VR/AR Systems Course
 
 Dependencies:
 
-  - Dlib (some version)
+  - Dlib 19.0
   - OpenCV 3.1.0
   - VTK 7.1.0
 
-Initial Commit is working properly, but can be optimised using optical flow algorithm.
+Initial Commit was working properly, could be optimised using optical flow algorithm.
+Additional commits added optical flow optimization, based on Lucas-Kanade approach.
+
 Also, usage of viz module from OpenCV is based on VTK library, so tread carefully there :D
 
 My way of building this is:
